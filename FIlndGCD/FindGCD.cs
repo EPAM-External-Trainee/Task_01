@@ -19,7 +19,7 @@ namespace FindGCDTask
         /// <returns>Greatest common divisor</returns>
         public static uint GCDByEuclid(uint num1, uint num2)
         {
-            if(num1 == 0 || num2 == 0)
+            if (num1 == 0 || num2 == 0)
             {
                 throw new ArgumentException("All numbers must be greater than 0");
             }

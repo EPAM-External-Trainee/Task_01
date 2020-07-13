@@ -13,7 +13,7 @@ namespace Figures
         protected List<(double, double)> Coords { get; set; } = new List<(double, double)>();
 
         /// <summary>
-        /// List of parties
+        /// List of sides
         /// </summary>
         protected List<double> Sides { get; set; } = new List<double>();
 

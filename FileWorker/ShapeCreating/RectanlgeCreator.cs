@@ -11,7 +11,7 @@ namespace FileWorker
         /// <summary>
         /// Creating a Rectangle object based on the name and corresponding vertex coordinates
         /// </summary>
-        /// <param name="shapeName">Name of the reactangle</param>
+        /// <param name="shapeName">Name of the rectangle</param>
         /// <param name="coords">Vertex coordinates</param>
         /// <returns>Rectangle object</returns>
         public override Polygon GetShape(string shapeName, string[] coords)
