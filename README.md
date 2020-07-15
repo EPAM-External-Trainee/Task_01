@@ -1,23 +1,23 @@
-# Задание 1
-* Разработать тип, реализующий алгоритм Евклида для вычисления НОД двух целых чисел (http://en.wikipedia.org/wiki/Euclidean_algorithm).
-* Добавить к разработанному типу дополнительную функциональность в виде перегруженных методов вычисления НОД для трех, четырех или пяти целых чисел.
-* Добавить к разработанному типу метод, реализующий алгоритм Стейна (бинарный алгоритм Эвклида) для расчета НОД двух целых чисел (http://en.wikipedia.org/wiki/Binary_GCD_algorithm). Метод должен принимать выходной параметр, содержащий значение времени, затраченное для выполнения расчетов.
-* Изменить метод, реализующий алгоритм Евклида вычисления НОД двух параметров, добавив аналогичную функциональность.
-* Дополнить методом, подготавливающим данные для построения гистограммы, сравнивающей время нахождения решения каждым из методов.
-* Создать unit-тесты для тестирования разработанных методов.
-* Весь код должен быть снабжён комментариями (автокомментариями)
-* Проект должен быть размещён в репозитории.
+# Task 1
+* Develop a type that implements the Euclid algorithm for calculating the GCD of two integers (http://en.wikipedia.org/wiki/Euclidean_algorithm).
+* Add additional functionality to the developed type in the form of overloaded methods for calculating GCD for three, four, or five integers.
+* Add to the developed type a method that implements the Stein algorithm (binary Euclid algorithm) for calculating the GCD of two integers (http://en.wikipedia.org/wiki/Binary_GCD_algorithm). The method must accept an out parameter containing the value of the time spent for performing calculations.
+* Change the method that implements the Euclid algorithm for calculating the GCD of two parameters, adding similar functionality.
+* Add a method that prepares data for building a histogram that compares the time of finding a solution for each of the methods.
+* Create unit tests to test the developed methods.
+* All code should be annotated (autocommentary).
+* The project must be hosted in the repository.
 
-# Задание 2
-* Использовать возможности ООП: классы, наследование, полиморфизм, инкапсуляция.
-* При кодировании должны быть использованы соглашения об оформлении кода (C# code convention).
-* Классы должны быть грамотно разложены по библиотекам.
-* В классах должны быть методы ToString(), GetHashCode() и Equals().
-* Создать класс, позволяющий загружать данные из текстового файла в массив.
-* Необходимо создать классы, для работы с фигурами, заданными на плоскости.
-* Фигуры могут задаваться размерами своих сторон, или координатами вершин.
-* Необходимо предусмотреть у каждой фигуры методы для вычисления площади и периметра.
-* Найти в массиве все фигуры, равные данной.
-* Создать unit-тесты для тестирования разработанных методов.
-* Весь код должен быть снабжён комментариями (автокомментариями).
-* Проект должен быть размещён в репозитории.
+# Task 2
+* Use OOP features: classes, inheritance, polymorphism, and encapsulation.
+* When encoding, the code design conventions (C# code convention) must be used.
+* Classes must be properly organized into libraries.
+* Classes must have ToString(), GetHashCode (), and Equals () methods.
+* To create a class that allows you to upload data from a text file into an array.
+* Create classes to work with shapes defined on the plane.
+* Shapes can be set by the size of their sides, or by the coordinates of their vertices.
+* You must provide methods for calculating the area and perimeter of each shape.
+* Find all shapes equal to this one in the array.
+* Create unit tests to test the developed methods.
+* All code should be annotated (autocommentary).
+* The project must be hosted in the repository.
