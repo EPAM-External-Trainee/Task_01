@@ -13,10 +13,10 @@
 * When encoding, the code design conventions (C# code convention) must be used.
 * Classes must be properly organized into libraries.
 * Classes must have ToString(), GetHashCode (), and Equals () methods.
-* To create a class that allows you to upload data from a text file into an array.
+* Create a class that allows you to upload data from a text file into an array.
 * Create classes to work with shapes defined on the plane.
 * Shapes can be set by the size of their sides, or by the coordinates of their vertices.
-* You must provide methods for calculating the area and perimeter of each shape.
+* Provide methods for calculating the area and perimeter of each shape.
 * Find all shapes equal to this one in the array.
 * Create unit tests to test the developed methods.
 * All code should be annotated (autocommentary).
