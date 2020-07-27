@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Figures
 {
@@ -33,23 +34,17 @@ namespace Figures
         /// <returns>The perimeter of a square</returns>
         public override double GetPerimeter() => 4 * Sides[0];
 
-        /// <summary>
-        /// Information about the square in the form of the name and coordinates of the vertices
-        /// </summary>
-        /// <returns>Square information as a string in CSV format</returns>
         public override string ToString() => $"{Name};{Coords[0].Item1},{Coords[0].Item2};{Coords[1].Item1},{Coords[1].Item2};{Coords[2].Item1},{Coords[2].Item2};{Coords[3].Item1},{Coords[3].Item2}";
 
-        /// <summary>
-        /// Comparing squares by area
-        /// </summary>
-        /// <param name="obj">Rectangle</param>
-        /// <returns>Сomparison result</returns>
-        public override bool Equals(object obj) => GetArea().Equals((obj as Square)?.GetArea());
+        public override bool Equals(object obj) => obj is Square square && Coords.SequenceEqual(square.Coords) && Sides.SequenceEqual(square.Sides) && Name == square.Name;
 
-        /// <summary>
-        /// Calculating hash code
-        /// </summary>
-        /// <returns>Hash сode</returns>
-        public override int GetHashCode() => GetArea().GetHashCode();
+        public override int GetHashCode()
+        {
+            int hashCode = -831016500;
+            hashCode = hashCode * -1521134295 + Coords.GetHashCode();
+            hashCode = hashCode * -1521134295 + Sides.GetHashCode();
+            hashCode = hashCode * -1521134295 + Name.GetHashCode();
+            return hashCode;
+        }
     }
 }

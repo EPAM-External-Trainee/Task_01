@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Figures
 {
@@ -40,23 +41,20 @@ namespace Figures
         /// <returns>The perimeter of a triangle</returns>
         public override double GetPerimeter() => Math.Round((Sides[0] + Sides[1] + Sides[2]) / 2, 2);
 
-        /// <summary>
-        /// Information about the triangle in the form of the name and coordinates of the vertices
-        /// </summary>
-        /// <returns>Triangle information as a string in CSV format</returns>
         public override string ToString() => $"{Name};{Coords[0].Item1},{Coords[0].Item2};{Coords[1].Item1},{Coords[1].Item2};{Coords[2].Item1},{Coords[2].Item2}";
 
-        /// <summary>
-        /// Comparing triangles by area
-        /// </summary>
-        /// <param name="obj">Triangle</param>
-        /// <returns>Сomparison result</returns>
-        public override bool Equals(object obj) => GetArea().Equals((obj as Triangle)?.GetArea());
+        public override int GetHashCode()
+        {
+            int hashCode = -831016500;
+            hashCode = hashCode * -1521134295 + Coords.GetHashCode();
+            hashCode = hashCode * -1521134295 + Sides.GetHashCode();
+            hashCode = hashCode * -1521134295 + Name.GetHashCode();
+            return hashCode;
+        }
 
-        /// <summary>
-        /// Calculating hash code
-        /// </summary>
-        /// <returns>Hash сode</returns>
-        public override int GetHashCode() => GetArea().GetHashCode();
+        public override bool Equals(object obj)
+        {
+            return obj is Triangle triangle && Coords.SequenceEqual(triangle.Coords) && Sides.SequenceEqual(triangle.Sides) && Name == triangle.Name;
+        }
     }
 }

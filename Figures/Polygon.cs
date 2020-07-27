@@ -8,6 +8,12 @@ namespace Figures
     public abstract class Polygon
     {
         /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="name">Name of the shape</param>
+        protected Polygon(string name) => Name = name;
+
+        /// <summary>
         /// List of vertex coordinates
         /// </summary>
         protected List<(double, double)> Coords { get; set; } = new List<(double, double)>();
@@ -21,12 +27,6 @@ namespace Figures
         /// Name of the shape
         /// </summary>
         public string Name { get; set; }
-
-        /// <summary>
-        /// Constructor
-        /// </summary>
-        /// <param name="name">Name of the shape</param>
-        protected Polygon(string name) => Name = name;
 
         /// <summary>
         /// Сalculating the area

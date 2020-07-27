@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Figures
 {
@@ -36,23 +37,17 @@ namespace Figures
         /// <returns>The perimeter of a rectangle</returns>
         public override double GetPerimeter() => Sides.Count * (Sides[0] + Sides[1]);
 
-        /// <summary>
-        /// Information about the rectangle in the form of the name and coordinates of the vertices
-        /// </summary>
-        /// <returns>Rectangle information as a string in CSV format</returns>
         public override string ToString() => $"{Name};{Coords[0].Item1},{Coords[0].Item2};{Coords[1].Item1},{Coords[1].Item2};{Coords[2].Item1},{Coords[2].Item2};{Coords[3].Item1},{Coords[3].Item2}";
 
-        /// <summary>
-        /// Comparing rectangles by area
-        /// </summary>
-        /// <param name="obj">Rectangle</param>
-        /// <returns>Сomparison result</returns>
-        public override bool Equals(object obj) => GetArea() == (obj as Rectangle)?.GetArea();
+        public override bool Equals(object obj) => obj is Rectangle rectangle && Coords.SequenceEqual(rectangle.Coords) && Sides.SequenceEqual(rectangle.Sides) && Name == rectangle.Name;
 
-        /// <summary>
-        /// Calculating hash code
-        /// </summary>
-        /// <returns>Hash сode</returns>
-        public override int GetHashCode() => GetArea().GetHashCode();
+        public override int GetHashCode()
+        {
+            int hashCode = -831016500;
+            hashCode = hashCode * -1521134295 + Coords.GetHashCode();
+            hashCode = hashCode * -1521134295 + Sides.GetHashCode();
+            hashCode = hashCode * -1521134295 + Name.GetHashCode();
+            return hashCode;
+        }
     }
 }
