@@ -30,6 +30,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resourses", "Resourses", "{
 		Figures.txt = Figures.txt
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task text", "Task text", "{8DCAC7E2-9918-4942-970F-84011CE03594}"
+	ProjectSection(SolutionItems) = preProject
+		C:\Users\Константин\Desktop\EPAM\task01_NET#_Declaring_and_calling_methods.pdf = C:\Users\Константин\Desktop\EPAM\task01_NET#_Declaring_and_calling_methods.pdf
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
