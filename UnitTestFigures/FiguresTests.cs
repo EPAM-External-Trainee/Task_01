@@ -89,14 +89,14 @@ namespace UnitTestForFigures
         private static IEnumerable<Polygon[]> GetFigures()
         {
             yield return new Rectangle[] {
-                new Rectangle("Rectangle1", (8, 19), (16, 34), (46, 16), (38, 2)),
-                new Rectangle("Rectangle2", (10, 20), (14, 38), (60, 19), (39, 4)),
-                new Rectangle("Rectangle3", (11, 22), (15, 31), (51, 22), (30, 7)),
-                new Rectangle("Rectangle4", (8, 19), (16, 34), (46, 16), (38, 2)),
+                new Rectangle("Rectangle", (8, 19), (16, 34), (46, 16), (38, 2)),
+                new Rectangle("Rectangle", (10, 20), (14, 38), (60, 19), (39, 4)),
+                new Rectangle("Rectangle", (11, 22), (15, 31), (51, 22), (30, 7)),
+                new Rectangle("Rectangle", (8, 19), (16, 34), (46, 16), (38, 2)),
             };
             yield return new Triangle[] {
-                new Triangle("Triangle1", (15, 15), (47, 40), (65, 20)),
-                new Triangle("Triangle2", (14, 17), (41, 52), (61, 19))
+                new Triangle("Triangle", (15, 15), (47, 40), (65, 20)),
+                new Triangle("Triangle", (14, 17), (41, 52), (61, 19))
             };
             yield return new Square[] {
                 new Square("Square", (6, 3), (6, 27), (30, 27), (30, 3)),
