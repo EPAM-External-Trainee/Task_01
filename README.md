@@ -1,4 +1,6 @@
-# Task 1
+# EPAM_External_Trainee_Task_01_Konstantin_Kapatkov
+## Task01. Declaring_and_calling_methods
+### Task 1
 * Develop a type that implements the Euclid algorithm for calculating the GCD of two integers (http://en.wikipedia.org/wiki/Euclidean_algorithm).
 * Add additional functionality to the developed type in the form of overloaded methods for calculating GCD for three, four, or five integers.
 * Add to the developed type a method that implements the Stein algorithm (binary Euclid algorithm) for calculating the GCD of two integers (http://en.wikipedia.org/wiki/Binary_GCD_algorithm). The method must accept an out parameter containing the value of the time spent for performing calculations.
@@ -8,7 +10,7 @@
 * All code should be annotated (autocommentary).
 * The project must be hosted in the repository.
 
-# Task 2
+### Task 2
 * Use OOP features: classes, inheritance, polymorphism, and encapsulation.
 * When encoding, the code design conventions (C# code convention) must be used.
 * Classes must be properly organized into libraries.
