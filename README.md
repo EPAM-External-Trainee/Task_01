@@ -1,4 +1,4 @@
-# EPAM_External_Trainee_Task_01_Konstantin_Kapatkov
+# .NET Summer 2020 (external)
 ## Task01. Declaring_and_calling_methods
 ### Task 1
 * Develop a type that implements the Euclid algorithm for calculating the GCD of two integers (http://en.wikipedia.org/wiki/Euclidean_algorithm).
